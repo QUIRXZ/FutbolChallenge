@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <div id="title-box">
+            <h1>Fútbol Challenge</h1>
+        </div>
+        <p>Instrucciones: Aparecera un 11 inicial que puede representar un equipo o un país. Tienes 40 segundos para responder cada pregunta.</p>
+        <button id="start-button">Iniciar Juego</button>
+        <p>-----------------------------------------------------------------------------------</p>
+        <p>Futbol Challenge utiliza imágenes de equipos de fútbol con fines de identificación,</p>
+        <p>pero no posee ningún derecho de propiedad sobre ellos.</p>
+    </div>
+    <div id="game-screen" style="display: none;">
+        <div id="question-container">
+            <img id="question-image" src="" alt="Question Image">
+            <p id="question-text"></p>
+        </div>
+        <div id="answer-container">
+            <div id="timer">40</div>
+            <div id="answers"></div>
+        </div>
+    </div>
+    <div id="end-screen" style="display: none;">
+        <h2>Resultados del Juego</h2>
+        <p id="score"></p>
+        <button id="restart-button">Reiniciar Juego</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
